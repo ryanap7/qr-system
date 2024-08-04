@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import "./common.min.css";
+@import "./home.min.css";
+@import "./home-layout.min.css";
+@import "./home-skin.min.css";
+@import "./home-skin-dark.min.css";
+body,
+html {
+    font-family: roboto !important;
+}
+.col-form-label .required {
+    color: #e02222;
+    font-size: 12px;
+    padding-left: 2px;
+    padding-top: 0px;
+}
+.garis {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    color: #3f4047;
+    font-size: 18px;
+}
+.garisHijau {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #77ad02;
+    color: #3f4047;
+    font-size: 18px;
+}
+.garis-left {
+    border-bottom: 1px solid #cccccc;
+    color: #3f4047;
+    font-size: 18px;
+}
+.batas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: 10px;
+}

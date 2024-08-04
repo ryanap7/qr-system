@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@media (max-width: 1024px) {
+    .m-page--siak.m-header--fixed-mobile.m-topbar--on .m-topbar {
+        background-color: rgba(250, 250, 250, 1);
+    }
+    .m-page--siak.m-header--fixed-mobile.m-topbar--on .m-brand--mobile {
+        -webkit-box-shadow: 0 0 21px 0 rgb(233 233 233/10%);
+        box-shadow: 0 0 21px 0 rgb(144 144 144/10%);
+    }
+}
