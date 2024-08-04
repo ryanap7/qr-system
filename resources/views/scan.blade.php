@@ -322,7 +322,7 @@
                 event.preventDefault();
 
                 $.ajax({
-                    url: 'http://localhost:8000/Terpusat/Pindai/procData',
+                    url: 'http://159.223.58.9//Terpusat/Pindai/procData',
                     method: 'POST',
                     data: $(this).serialize(),
                     success: function(response) {

@@ -26,5 +26,7 @@ Route::get('Terpusat/Pindai/NII3578_018dfd9e-ff5c-fb0e-a5fa-ba651523a93d', funct
 Route::get('Terpusat/apps/generateCaptcha', [CaptchaController::class, 'generate']);
 Route::post('Terpusat/Pindai/procData', [CaptchaController::class, 'processData'])->name('terpusat.pindai.procData');
 
+Route::get('qr', [CaptchaController::class, 'generateQrCode']);
+
 Route::get('referensi/wni', [ReferensiController::class, 'wni']);
 Route::get('referensi/wna', [ReferensiController::class, 'wna']);

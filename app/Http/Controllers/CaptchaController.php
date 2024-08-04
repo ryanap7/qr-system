@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Str;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class CaptchaController extends Controller
 {
@@ -115,5 +115,12 @@ class CaptchaController extends Controller
 
         // Encode the image in base64
         return base64_encode($imageData);
+    }
+
+    public function generateQrCode()
+    {
+        $image = QrCode::size(300)->generate('http://159.223.58.9//Terpusat/Pindai/NII3578_018dfd9e-ff5c-fb0e-a5fa-ba651523a93d');
+
+        return view('qrCode', ['image' => $image]);
     }
 }
